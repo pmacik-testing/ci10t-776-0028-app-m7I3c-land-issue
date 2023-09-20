@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-sckv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0028-tenant/ci10t-776-0028-app/devfile-sample-sckv@sha256:9a7046900d64fe9dcefe407f450bac319b7e05a9775d2c8d3172e564db1a0018
+        name: my-nodejs
+        resources: {}
+status: {}
